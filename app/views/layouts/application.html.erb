@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" class="no-js">
+  <title>2016 동국대학교 대동제</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="shortcut icon" href="favicon.png">
+    
+    <!-- Bootstrap 3.3.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/home.scss">
+    <link rel="stylesheet" href="../assets/animate.css">
+    <link rel="stylesheet" href="../assets/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/slick.css">
+    <link rel="stylesheet" href="../assets/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="../assets/styles.css">
+    
+    <script src="../assets/jquery-1.11.1.min.js"></script>
+    <script src="../assets/bootstrap.min.js"></script>
+    <script src="../assets/slick.min.js"></script>
+    <script src="../assets/placeholdem.min.js"></script>
+    <script src="../assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="../assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../assets/waypoints.min.js"></script>
+    <script src="../assets/scripts.js"></script>
+    
+  
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../assets/modernizr.custom.32033.js"></script>
+
+</head>
+<body>
+
+<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+<%= yield %>
+
+</body>
+</html>
