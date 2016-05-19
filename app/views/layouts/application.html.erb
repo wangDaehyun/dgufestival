@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
   
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="../assets/favicon.png">
     
     <!-- Bootstrap 3.3.2 -->
     <link rel="stylesheet" href="../assets/bootstrap.min.css">
@@ -37,19 +37,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../assets/modernizr.custom.32033.js"></script>
-
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=4b5fcfcf5be4462226091d33cf9db998"></script>
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=01c088e7e60634fd1d012ae087b92632"></script>
 </head>
 <body>
 
-<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 
 <%= yield %>
 
