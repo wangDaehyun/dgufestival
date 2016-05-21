@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 					ieCompat: true,
 				},
 				files: {
-					'../assets/styles.css': '../assets/colors.less'
+					'assets/css/styles.css': 'assets/less/colors.less'
 				}
 			},
 			prod: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 					ieCompat: true,
 				},
 				files: {
-					'../assets/styles.min.css': '../assets/styles.less'
+					'assets/css/styles.min.css': 'assets/less/styles.less'
 				}
 			}
 		},
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 	      // lint your project's server code
 	      server: {
 	        src: [ // some example files
-	          '../assets/scripts.js'
+	          'assets/js/scripts.js'
 	        ],
 	        options: {
 		        edition: 'latest', // specify an edition of jslint or use 'dir/mycustom-jslint.js' for own path
